@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Character Creation</title>
+</head>
+
+<body>
+    <h1>Your character is...</h1>
+    <script type="text/javascript">
+        var strength = prompt("On a scale of 1-10, how much does strength matter to you?");
+        if (strength > 7) {
+            var dexterity = prompt("On a scale of 1-10, how well can you do a cartwheel?");
+            if (dexterity > 7) {
+                alert("You must be a barbarian!");
+                document.write("Javier the Barbarian.");
+            } else {
+                alert("You must be a paladin!");
+                document.write("Eric the Paladin.");
+            }
+        } else if (strength >= 4) {
+            var wisdom = prompt("On a scale of 1-10, how much common sense do you have?");
+            if (wisdom > 7) {
+                alert("You must be a ranger!");
+                document.write("Renee the Ranger.");
+            } else {
+                alert("You must be a fighter!");
+                document.write("Franklin the Fighter.");
+            }
+
+        } else {
+            var intellect = prompt("On a scale of 1-10, how smart do you think you are?");
+            if (intellect > 7) {
+                var charisma = prompt("On a scale of 1-10, how much of a social butterfly are you?");
+                if (charisma > 7) {
+                    alert("You must be a bard!");
+                    document.write("Alexander the Bard.");
+                } else {
+                    var confirmMagic = confirm("Do you like magic?");
+                    if (confirmMagic) {
+                        alert("You must be a sorcerer!");
+                        document.write("Lanna the Sorcerer.");
+                    } else {
+                        alert("You must be a rogue!");
+                        document.write("Luis the Rogue.");
+                    }
+                }
+            } else {
+                var constitution = prompt("On a scale of 1-10, how woozy do you feel after looking at an open wound?");
+                if (constitution > 7) {
+                    alert("You must be a fighter!");
+                    document.write("Franklin the Fighter.");
+                } else {
+                    alert("You must be a cleric!");
+                    document.write("Clarence the Cleric.");
+                }
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
