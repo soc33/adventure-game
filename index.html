@@ -6,65 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Character Creation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Your character is...</h1>
-    <script type="text/javascript">
-        var strength = prompt("On a scale of 1-10, how much does strength matter to you?");
-        if (strength > 7) {
-            var dexterity = prompt("On a scale of 1-10, how well can you do a cartwheel?");
-            if (dexterity > 7) {
-                alert("You must be a barbarian!");
-                document.write("Javier the Barbarian.");
-            } else {
-                alert("You must be a paladin!");
-                document.write("Eric the Paladin.");
-            }
-        } else if (strength >= 4) {
-            var wisdom = prompt("On a scale of 1-10, how much common sense do you have?");
-            if (wisdom > 7) {
-                alert("You must be a ranger!");
-                document.write("Renee the Ranger.");
-            } else {
-                alert("You must be a fighter!");
-                document.write("Franklin the Fighter.");
-            }
+    <div class="container">
+        <h1>Your character is...</h1>
+        <script type="text/javascript">
+            var strength = prompt("On a scale of 1-10, how much does strength matter to you?");
+            if (strength > 7) {
+                var dexterity = prompt("On a scale of 1-10, how well can you do a cartwheel?");
+                if (dexterity > 7) {
+                    alert("You must be a barbarian!");
+                    document.write("Javier the Barbarian.");
 
-        } else {
-            var intellect = prompt("On a scale of 1-10, how smart do you think you are?");
-            if (intellect > 7) {
-                var charisma = prompt("On a scale of 1-10, how much of a social butterfly are you?");
-                if (charisma > 7) {
-                    alert("You must be a bard!");
-                    document.write("Alexander the Bard.");
                 } else {
-                    var confirmMagic = confirm("Do you like magic?");
-                    if (confirmMagic) {
-                        alert("You must be a sorcerer!");
-                        document.write("Lanna the Sorcerer.");
-                    } else {
-                        alert("You must be a rogue!");
-                        document.write("Luis the Rogue.");
-                    }
+                    alert("You must be a paladin!");
+                    document.write("Eric the Paladin.");
                 }
-            } else {
-                var constitution = prompt("On a scale of 1-10, how woozy do you feel after looking at an open wound?");
-                if (constitution > 7) {
+            } else if (strength >= 4) {
+                var wisdom = prompt("On a scale of 1-10, how much common sense do you have?");
+                if (wisdom > 7) {
+                    alert("You must be a ranger!");
+                    document.write("Renee the Ranger.");
+                } else {
                     alert("You must be a fighter!");
                     document.write("Franklin the Fighter.");
+                }
+
+            } else {
+                var intellect = prompt("On a scale of 1-10, how smart do you think you are?");
+                if (intellect >= 7) {
+                    var charisma = prompt("On a scale of 1-10, how much of a social butterfly are you?");
+                    if (charisma > 7) {
+                        alert("You must be a bard!");
+                        document.write("Alexander the Bard.");
+                    } else {
+                        var confirmMagic = confirm("Do you like magic?");
+                        if (confirmMagic) {
+                            alert("You must be a sorcerer!");
+                            document.write("Lanna the Sorcerer.");
+                        } else {
+                            alert("You must be a rogue!");
+                            document.write("Luis the Rogue.");
+                        }
+                    }
                 } else {
-                    alert("You must be a cleric!");
-                    document.write("Clarence the Cleric.");
+                    var constitution = prompt("On a scale of 1-10, how woozy do you feel after looking at an open wound?");
+                    if (constitution > 7) {
+                        alert("You must be an NPC!");
+                        document.write("Damsel in Distress!");
+                    } else {
+                        alert("You must be a cleric!");
+                        document.write("Clarence the Cleric.");
+                    }
                 }
             }
-        }
 
-
-
-
-
-    </script>
+        </script>
+        <br>
+        <hr>
+        <br>
+        <button type="button" class="btn btn-primary">Barbarian Adventure</button><br>
+        <button type="button" class="btn btn-secondary">Paladin Adventure</button><br>
+        <button type="button" class="btn btn-success">Fighter Adventure</button><br>
+        <button type="button" class="btn btn-danger">Cleric Adventure</button><br>
+        <button type="button" class="btn btn-warning">Ranger Adventure</button><br>
+        <button type="button" class="btn btn-info">Rogue Adventure</button><br>
+        <button type="button" class="btn btn-light">Bard Adventure</button><br>
+        <button type="button" class="btn btn-dark">Sorcerer Adventure</button><br>
+        <button type="button" class="btn btn-outline-primary">Damsel in Distress Adventure</button>
+    </div>
 </body>
 
 </html>
