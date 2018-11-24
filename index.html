@@ -8,19 +8,21 @@
     <title>Character Creation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Your character is...</h1>
         <script type="text/javascript">
+            var barb = "Barbarian Adventure Begins!";
             var strength = prompt("On a scale of 1-10, how much does strength matter to you?");
             if (strength > 7) {
                 var dexterity = prompt("On a scale of 1-10, how well can you do a cartwheel?");
                 if (dexterity > 7) {
                     alert("You must be a barbarian!");
-                    document.write("Javier the Barbarian.");
-
+                    document.write("Javier the Barbarian. ");
+                    document.write(barb + " barbarian.html");
                 } else {
                     alert("You must be a paladin!");
                     document.write("Eric the Paladin.");
@@ -64,19 +66,31 @@
                 }
             }
 
+
         </script>
         <br>
         <hr>
         <br>
-        <button type="button" class="btn btn-primary">Barbarian Adventure</button><br>
-        <button type="button" class="btn btn-secondary">Paladin Adventure</button><br>
-        <button type="button" class="btn btn-success">Fighter Adventure</button><br>
-        <button type="button" class="btn btn-danger">Cleric Adventure</button><br>
-        <button type="button" class="btn btn-warning">Ranger Adventure</button><br>
-        <button type="button" class="btn btn-info">Rogue Adventure</button><br>
-        <button type="button" class="btn btn-light">Bard Adventure</button><br>
-        <button type="button" class="btn btn-dark">Sorcerer Adventure</button><br>
-        <button type="button" class="btn btn-outline-primary">Damsel in Distress Adventure</button>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <a href="barbarian.html" id="one" type="button" class="btn btn-primary">Barbarian Adventure</a><br><br>
+                <a href="paladin.html" type="button" id="two" class="btn btn-secondary">Paladin Adventure</a><br><br>
+                <a href="fighter.html" type="button" id="three" class="btn btn-success">Fighter Adventure</a><br><br>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="cleric.html" type="button" id="four" class="btn btn-danger">Cleric Adventure</a><br><br>
+                <a href="ranger.html" type="button" id="five" class="btn btn-warning">Ranger Adventure</a><br><br>
+                <a href="rogue.html" type="button" id="six" class="btn btn-info">Rogue Adventure</a><br><br>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="bard.html" type="button" id="seven" class="btn btn-light">Bard Adventure</a><br><br>
+                <a href="sorcerer.html" type="button" id="eight" class="btn btn-dark">Sorcerer Adventure</a><br><br>
+                <a href="damsel.html" type="button" id="nine" class="btn btn-outline-primary">Damsel in Distress
+                    Adventure</a>
+            </div>
+        </div>
+
+
     </div>
 </body>
 
