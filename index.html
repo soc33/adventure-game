@@ -36,8 +36,11 @@
             } else if (strength >= 4) {
                 var wisdom = prompt("On a scale of 1-10, how much common sense do you have?");
                 if (wisdom > 7) {
-                    alert("You must be a ranger!");
-                    document.write("Renee the Ranger.");
+                    alert("You must be a druid!");
+                    document.write("Dave the Druid.")
+                } else if (wisdom >=4 ) {
+                    alert("You must be a rogue!");
+                    document.write("Luis the Rogue.");
                 } else {
                     alert("You must be a fighter!");
                     document.write("Franklin the Fighter.");
@@ -56,8 +59,8 @@
                             alert("You must be a sorcerer!");
                             document.write("Lanna the Sorcerer.");
                         } else {
-                            alert("You must be a rogue!");
-                            document.write("Luis the Rogue.");
+                            alert("You must be a ranger!");
+                            document.write("Renee the Ranger.");
                         }
                     }
                 } else {
