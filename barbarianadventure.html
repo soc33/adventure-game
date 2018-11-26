@@ -14,14 +14,40 @@
         alert("bar... again... and getting thrown out ... again... better think quick, this is the only bar that lets a hothead like you back in to drink so you have to make sure the barmaid doesn't hate you!");
         var option1 = prompt("Do you, 1 = grab the barmaid and start begging her not to throw you out? or 2 = hand her all the money left in your pockets as your apology for breaking the table.. again..");
         if (option1 == 1) {
-            alert("Barmaid yells for help and slaps you across the face! 'Don/'t touch me!' Or you/'ll never be allowed back in!");
-            prompt("Quick! Others are coming to her rescue! What do you do now? 1 = throw up hands in defeat, 2 = get out your axe and prepare to battle, 3 = stand your ground proudly as the drunken warrior you are");
-
+            alert("Barmaid yells for help and slaps you across the face! Barmaid: Don't touch me! I don't ever want you to come back in this bar ever again!");
+            document.write("The barmaid slapped you for touching her and you lost 1 health point");
+            var option2 = prompt("Quick! Others are coming to her rescue! What do you do now? 1 = throw up hands in defeat, 2 = get out your axe and prepare to battle, 3 = stand your ground proudly as the drunken warrior you are");
+            if (option2 == 1 ) {
+                alert("Barmaid: Oh get up and get out! I don't ever want to see you here again!");
+                alert("there goes your only bar in town... you start to contemplate your chances of finding another town with a good bar");
+            } else if (option2 == 2) {
+                alert("Everyone gasps as you bring out your axe, from the corner you hear someone yell, ARE YOU REALLY THAT STUPID TO BRING OUT YOUR AXE IN LILLY's BAR?");
+                alert("Before you can make another move, something blunt hits the back of your head, your vision darkens, and you hit the floor... ");
+                alert("When you come to again, you are laying in the dirt outside the bar with a throbbing knot on the back of the head. That's going to hurt for awhile... ");
+                document.write("You chose to take out your axe in the bar and got knocked out by Lilly's guards. You didn't really think she would host people like you without protection did you? You lost 5 health points.");
+            } else {
+                alert("Someone in the corner yells at you: You think you're so tough? Let's get him!");
+                alert("The barmaid yells: STOP! He has no weapon out, you will not attack him, just drag him out of here, I don't want to see his face anymore, AND NO BLOOD ON MY FLOOR!");
+                alert("Several people begin to drag you out, you would fight them off but 15 vs 1 might not be good odds for you.");
+                alert("She may have said don't hurt him but they don't seem to be caring much about that as it seems very purposeful that you have gotten banged into several tables on your way to being thrown out...");
+                document.write("You stood your ground proudly but also got dragged out by 15 people not so proudly, you lost 3 health points from table legs along the way");
+            }
         }else{
-            alert("What!? Two coins? That/'s not even enough to fix the table you broke! Just get out of my bar! I don/'t want to see your face until you can pay for my table!");
-            alert("Whelp now you/'re broke... but at least you should be able to come back if you bring her more money, she/'s a tough one she is...");
+            alert("What!? Two coins? That's not even enough to fix the table you broke! Just get out of my bar! I don't want to see your face until you can pay for my table!");
+            alert("Whelp now you're broke... but at least you should be able to come back if you bring her more money, she's a tough one she is... but that's why you enjoy her bar");
         }
-        alert("To your right ")
+        alert("All of a sudden you hear a scream to your right. You look down the alley to see a beautiful woman in torn and dirty clothes, to be honest she looks like she's been having a rough night.");
+        alert("maybe even worse than yours...");
+        alert("Being that you are such a selfless and generous person and not at all just looking to fight something, you rush over to the Damsel in distress.");
+        var option3 = prompt("the damsel hasn't seemed to have noticed you, but just continues screaming... Do you 1 = just try saying hello, 2 = scream at her to stop, 3 = slap her out of it");
+        if (option3 == 1) {
+            alert("she cannot hear you, and just keeps screaming, you start to feel dizzy from the shrillness of her screams and go to cover your ears, when someone grabs your hand from behind");
+        } else if (option3 == 2) {
+            alert("she goes from screaming at nothing to screaming directly at you, you cannot tell if you've just made things better or worse, while trying to decide what to do, you start to hear the lovely sound of someone playing a lute right behind you.");
+        } else {
+
+        }
+
     </script>
     <div class="jumbotron">
         <h1 class="display-4">The End</h1>
