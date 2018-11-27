@@ -15,7 +15,7 @@
         var option1 = prompt("Do you, 1 = grab the barmaid and start begging her not to throw you out? or 2 = hand her all the money left in your pockets as your apology for breaking the table.. again..");
         if (option1 == 1) {
             alert("Barmaid yells for help and slaps you across the face! Barmaid: Don't touch me! I don't ever want you to come back in this bar ever again!");
-            document.write("The barmaid slapped you for touching her and you lost 1 health point");
+            document.write("The barmaid slapped you for touching her and you lost 1 health point. ");
             var option2 = prompt("Quick! Others are coming to her rescue! What do you do now? 1 = throw up hands in defeat, 2 = get out your axe and prepare to battle, 3 = stand your ground proudly as the drunken warrior you are");
             if (option2 == 1 ) {
                 alert("Barmaid: Oh get up and get out! I don't ever want to see you here again!");
@@ -24,13 +24,13 @@
                 alert("Everyone gasps as you bring out your axe, from the corner you hear someone yell, ARE YOU REALLY THAT STUPID TO BRING OUT YOUR AXE IN LILLY's BAR?");
                 alert("Before you can make another move, something blunt hits the back of your head, your vision darkens, and you hit the floor... ");
                 alert("When you come to again, you are laying in the dirt outside the bar with a throbbing knot on the back of the head. That's going to hurt for awhile... ");
-                document.write("You chose to take out your axe in the bar and got knocked out by Lilly's guards. You didn't really think she would host people like you without protection did you? You lost 5 health points.");
+                document.write("You chose to take out your axe in the bar and got knocked out by Lilly's guards. You didn't really think she would host people like you without protection did you? You lost 5 health points. ");
             } else {
                 alert("Someone in the corner yells at you: You think you're so tough? Let's get him!");
                 alert("The barmaid yells: STOP! He has no weapon out, you will not attack him, just drag him out of here, I don't want to see his face anymore, AND NO BLOOD ON MY FLOOR!");
                 alert("Several people begin to drag you out, you would fight them off but 15 vs 1 might not be good odds for you.");
                 alert("She may have said don't hurt him but they don't seem to be caring much about that as it seems very purposeful that you have gotten banged into several tables on your way to being thrown out...");
-                document.write("You stood your ground proudly but also got dragged out by 15 people not so proudly, you lost 3 health points from table legs along the way");
+                document.write("You stood your ground proudly but also got dragged out by 15 people not so proudly, you lost 3 health points from table legs along the way. ");
             }
         }else{
             alert("What!? Two coins? That's not even enough to fix the table you broke! Just get out of my bar! I don't want to see your face until you can pay for my table!");
@@ -39,13 +39,35 @@
         alert("All of a sudden you hear a scream to your right. You look down the alley to see a beautiful woman in torn and dirty clothes, to be honest she looks like she's been having a rough night.");
         alert("maybe even worse than yours...");
         alert("Being that you are such a selfless and generous person and not at all just looking to fight something, you rush over to the Damsel in distress.");
-        var option3 = prompt("the damsel hasn't seemed to have noticed you, but just continues screaming... Do you 1 = just try saying hello, 2 = scream at her to stop, 3 = slap her out of it");
+        var option3 = prompt("the damsel hasn't seemed to have noticed you, but just continues screaming... Do you 1 = just try saying hello, 2 = scream at her back, 3 = slap her out of it");
         if (option3 == 1) {
-            alert("she cannot hear you, and just keeps screaming, you start to feel dizzy from the shrillness of her screams and go to cover your ears, when someone grabs your hand from behind");
-        } else if (option3 == 2) {
-            alert("she goes from screaming at nothing to screaming directly at you, you cannot tell if you've just made things better or worse, while trying to decide what to do, you start to hear the lovely sound of someone playing a lute right behind you.");
-        } else {
+            alert("She cannot hear you, and just keeps screaming.");
+            var option4 = prompt("Do you 1 = shake her out of it, or 2 = just try raising your voice a bit");
+            if (option4 == 1) {
+                alert("You grab hold of her and she begins kicking and screaming at you now, all of a sudden you feel something wet and sharp wrap around your arm, you look down to see a bear has your arm in its jaws, not enough to break it but it definitely hurts..");
+                alert("As you stare, with a bit of confusion, you realize the damsel has gone limp, passed out from the shock of the evening, and the bear continues to stare you down as you start to hear a voice tell you to let the woman go.");
+                
+            } else {
+                alert("You begin to shout louder, she finally hears you and seems even more startled but begins to slow down her screaming. You are finally able to ask her what's wrong.");
+                alert("The woman now begins to sob uncontrollably, between the sobs you can make out something about a tower, robbers, lost, money, ripped dress, and maybe the word monster but you aren't sure...");
+            }    
+                
 
+        } else if (option3 == 2) {
+            alert("She goes from screaming at nothing to screaming directly at you,  you start to feel dizzy from the shrillness of her screams and go to cover your ears, while trying to decide what to do, you start to hear the lovely sound of someone playing a lute right behind you.");
+            alert("The Damsel begins to lower her voice and you begin to feel calm as well. You look behind you to find a pretty well dressed man, who looks like a stage performer, eccentric colors and a couple instruments hanging off and around him and a lute currently being played in his hands.");
+            alert("Mysterious man: Well that's no way to talk to a lady, What's wrong miss? This fella looks strong and I am quite capable myself so we can probably help you with whatever is the matter.");
+            alert("You begin to protest about helping when the mysterious man whispers in your ear 'haven't you scared the poor miss enough? You should at least help her out now' He then immediately turns to the damsel without waiting for your response, 'What seems to be the problem my lady?'");
+            alert("She begins regailing her tale in a calm voice, she escaped from a tower, ripped her dress, finally felt she was free when some raiders caught her and took all her money, from there she proceeded to get lost in the woods several times and came across a few bears and other wild animals she had to run and hide from until she finally found this town, realized she had no money and could not pay for food or do anything so she fell in exhaustion. Then to top it off a dead cat just got thrown out of the near by tavern right in front of her which is what caused her to scream.");
+            alert("A third voice responds: That's quite an ordeal...");
+            alert("You and the mysterious man both turn around to find a man dressed in robes but with a significant feeling of nature around him.");
+        } else {
+            alert("You give her a quick slap across the face and she goes completely limp... panicking you begin to shake her to try and get a response.");
+            alert("Two men walk up behind you and start calling to you: What's going on over there? We heard screaming is everything ok?");
+            var option5 = prompt("Quick, do you, 1 = pretend nothing is wrong and weekend at bernies the situation, 2 = try to hide her, 3 = tell the truth");
+            if (option5 == 1) {
+
+            }
         }
 
     </script>
