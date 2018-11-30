@@ -25,27 +25,27 @@
                     <tbody>
                         <tr>
                             <th scope="row">Strength</th>
-                            <td>#</td>
+                            <td>16 (+3)</td>
                         </tr>
                         <tr>
                             <th scope="row">Dexterity</th>
-                            <td>#</td>
+                            <td>14 (+2)</td>
                         </tr>
                         <tr>
                             <th scope="row">Constitution</th>
-                            <td>#</td>
+                            <td>15 (+3)</td>
                         </tr>
                         <tr>
                             <th scope="row">Intelligence</th>
-                            <td>#</td>
+                            <td>11 (+0)</td>
                         </tr>
                         <tr>
                             <th scope="row">Wisdom</th>
-                            <td>#</td>
+                            <td>13 (+1)</td>
                         </tr>
                         <tr>
                             <th scope="row">Charisma</th>
-                            <td>#</td>
+                            <td>9 (-1)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -54,18 +54,43 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Name of character</h5>
-                        <p class="card-text">Quick description.</p>
+                        <h5 class="card-title">Javier the Barbarian</h5>
+                        <p class="card-text">Super strong in physical strength and health, not so strong in people
+                            skills</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Weapon 1 attack</li>
-                        <li class="list-group-item">Weapon 2 attack</li>
-                        <li class="list-group-item">ability3</li>
+                        <li class="list-group-item">Greataxe: +5 to hit, 1d12 +3 to damage</li>
+                        <li class="list-group-item">Unarmed Strike: +5 to hit, 4 damage</li>
+                        <li class="list-group-item">Rage: +2 damage, resistance to physical attacks</li>
                     </ul>
                 </div>
             </div>
-        </div> 
+        </div>
         <h1>Got your character memorized? Click <a href="barbarianadventure.html">here</a>, to begin your adventure!</h1>
     </div>
+    <script type="text/javascript">
+        var barbarian = {
+            strength: 3,
+            dexterity: 2,
+            constitution: 3,
+            intelligence: 0,
+            wisdom: 1,
+            charisma: -1,
+            attacks: {
+                one: 3,
+                two: 4,
+                three: 2
+            }
+        };
+        function getAttack(x) {
+            // x = prompt("enter 1, 2, 3");
+            // console.log(this.attacks.x);
+            if (parseInt(x) === 1) {
+            console.log(barbarian.attacks.one);
+            }
+        }
+        getAttack(prompt("enter 1, 2, or 3"));
+    </script>
 </body>
+
 </html>
